@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_14cd51205fbd5760a10b6e8a4c3d9d09 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_14cd51205fbd5760a10b6e8a4c3d9d09" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_14cd51205fbd5760a10b6e8a4c3d9d09 = L.map(
+                "map_14cd51205fbd5760a10b6e8a4c3d9d09",
+                {
+                    center: [22.9734, 78.6569],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e0504e2f45e3223dcc36f5bf728e88c8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+
+}
+
+            );
+        
+    
+            tile_layer_e0504e2f45e3223dcc36f5bf728e88c8.addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+            var circle_marker_42031c3191f50d76e41965c5c1a30c42 = L.circleMarker(
+                [12.61124, 92.83165],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.016, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_6610d445eb5f112b21d77afe2d0c4ff3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e3ac3b63333c9a5fbab0a80f482616d5 = $(`<div id="html_e3ac3b63333c9a5fbab0a80f482616d5" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor1 - Andaman & Nicobar Islands</b><br>             <b style='font-size:14px; color:orange;'>140.16 mm</b><br>             <span style='font-size:13px; color:orange;'>🌧️ Heavy Rain</span>         </div>         </div>`)[0];
+                popup_6610d445eb5f112b21d77afe2d0c4ff3.setContent(html_e3ac3b63333c9a5fbab0a80f482616d5);
+            
+        
+
+        circle_marker_42031c3191f50d76e41965c5c1a30c42.bindPopup(popup_6610d445eb5f112b21d77afe2d0c4ff3)
+        ;
+
+        
+    
+    
+            var circle_marker_adf72eff0397f125d0d160461ba1f1b4 = L.circleMarker(
+                [26.61872396, 82.86899052],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.515, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_ec739311152d91e698b56b7448594d33 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5df44efeb6cf1980f51fe51b7a66640f = $(`<div id="html_5df44efeb6cf1980f51fe51b7a66640f" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor10 - East Uttar Pradesh</b><br>             <b style='font-size:14px; color:orange;'>105.15 mm</b><br>             <span style='font-size:13px; color:orange;'>🌧️ Heavy Rain</span>         </div>         </div>`)[0];
+                popup_ec739311152d91e698b56b7448594d33.setContent(html_5df44efeb6cf1980f51fe51b7a66640f);
+            
+        
+
+        circle_marker_adf72eff0397f125d0d160461ba1f1b4.bindPopup(popup_ec739311152d91e698b56b7448594d33)
+        ;
+
+        
+    
+    
+            var circle_marker_24973d8ff3172eb1ae6d223287fc324e = L.circleMarker(
+                [27.71343038, 78.29867825],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.618, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_c2ab5f56919364568c02e91cbf9f02c8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9d289bc6855c0390f51ee785f86a808e = $(`<div id="html_9d289bc6855c0390f51ee785f86a808e" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor11 - West Uttar Pradesh</b><br>             <b style='font-size:14px; color:orange;'>106.18 mm</b><br>             <span style='font-size:13px; color:orange;'>🌧️ Heavy Rain</span>         </div>         </div>`)[0];
+                popup_c2ab5f56919364568c02e91cbf9f02c8.setContent(html_9d289bc6855c0390f51ee785f86a808e);
+            
+        
+
+        circle_marker_24973d8ff3172eb1ae6d223287fc324e.bindPopup(popup_c2ab5f56919364568c02e91cbf9f02c8)
+        ;
+
+        
+    
+    
+            var circle_marker_92088996be0405ab84c433d5c3be9526 = L.circleMarker(
+                [30.04174, 79.08969],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkpurple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.489, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_2a29626b0d84279cb2df17bbe9a4bb94 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bbd171dfd400a5f4015956bbe4a97dc6 = $(`<div id="html_bbd171dfd400a5f4015956bbe4a97dc6" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor12 - Uttarakhand</b><br>             <b style='font-size:14px; color:green;'>94.89 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_2a29626b0d84279cb2df17bbe9a4bb94.setContent(html_bbd171dfd400a5f4015956bbe4a97dc6);
+            
+        
+
+        circle_marker_92088996be0405ab84c433d5c3be9526.bindPopup(popup_2a29626b0d84279cb2df17bbe9a4bb94)
+        ;
+
+        
+    
+    
+            var circle_marker_439726c3e1519cd70182bbd4d05f6a49 = L.circleMarker(
+                [29.45568526, 76.79243340000002],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_e7096db371af22efb2b85e80608067ae = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6b4c42cc8cf5c9d6396632b1f9b092e0 = $(`<div id="html_6b4c42cc8cf5c9d6396632b1f9b092e0" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor13 - Haryana Delhi & Chandigarh</b><br>             <b style='font-size:14px; color:green;'>58.09 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_e7096db371af22efb2b85e80608067ae.setContent(html_6b4c42cc8cf5c9d6396632b1f9b092e0);
+            
+        
+
+        circle_marker_439726c3e1519cd70182bbd4d05f6a49.bindPopup(popup_e7096db371af22efb2b85e80608067ae)
+        ;
+
+        
+    
+    
+            var circle_marker_e218d636c1f498d1bebd2fae025a898c = L.circleMarker(
+                [30.92932, 75.50048000000002],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.412, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_44a994cc3b8a510cfab017750130c596 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_109e3eff784af3728520e51f05bd2a49 = $(`<div id="html_109e3eff784af3728520e51f05bd2a49" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor14 - Punjab</b><br>             <b style='font-size:14px; color:orange;'>114.12 mm</b><br>             <span style='font-size:13px; color:orange;'>🌧️ Heavy Rain</span>         </div>         </div>`)[0];
+                popup_44a994cc3b8a510cfab017750130c596.setContent(html_109e3eff784af3728520e51f05bd2a49);
+            
+        
+
+        circle_marker_e218d636c1f498d1bebd2fae025a898c.bindPopup(popup_44a994cc3b8a510cfab017750130c596)
+        ;
+
+        
+    
+    
+            var circle_marker_c314e68d1d71f7c98958ccf7afcfc602 = L.circleMarker(
+                [31.81676, 77.34931999999998],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.151999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_9933d6d6d36ddbba68af65cfcd31abbf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_910f6a77a5651fad1d1c6effbd925034 = $(`<div id="html_910f6a77a5651fad1d1c6effbd925034" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor15 - Himachal Pradesh</b><br>             <b style='font-size:14px; color:green;'>71.52 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_9933d6d6d36ddbba68af65cfcd31abbf.setContent(html_910f6a77a5651fad1d1c6effbd925034);
+            
+        
+
+        circle_marker_c314e68d1d71f7c98958ccf7afcfc602.bindPopup(popup_9933d6d6d36ddbba68af65cfcd31abbf)
+        ;
+
+        
+    
+    
+            var circle_marker_be3a45d0179b722699b2033e8f58faea = L.circleMarker(
+                [33.55745, 75.06152],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.620000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_645dcc421c7ca4c18d80c316fe13e118 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_53b703dcf8510eda355a8a6bfe67e2f0 = $(`<div id="html_53b703dcf8510eda355a8a6bfe67e2f0" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor16 - Jammu & Kashmir</b><br>             <b style='font-size:14px; color:orange;'>116.2 mm</b><br>             <span style='font-size:13px; color:orange;'>🌧️ Heavy Rain</span>         </div>         </div>`)[0];
+                popup_645dcc421c7ca4c18d80c316fe13e118.setContent(html_53b703dcf8510eda355a8a6bfe67e2f0);
+            
+        
+
+        circle_marker_be3a45d0179b722699b2033e8f58faea.bindPopup(popup_645dcc421c7ca4c18d80c316fe13e118)
+        ;
+
+        
+    
+    
+            var circle_marker_001ad0110b75687311d0c884ff903576 = L.circleMarker(
+                [26.81527643, 71.00340235],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.449, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_438e7c90d3eded1f347ccb01bd526acf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ff1eb7ddbca416985ada7321a868da9d = $(`<div id="html_ff1eb7ddbca416985ada7321a868da9d" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor17 - West Rajasthan</b><br>             <b style='font-size:14px; color:green;'>84.49 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_438e7c90d3eded1f347ccb01bd526acf.setContent(html_ff1eb7ddbca416985ada7321a868da9d);
+            
+        
+
+        circle_marker_001ad0110b75687311d0c884ff903576.bindPopup(popup_438e7c90d3eded1f347ccb01bd526acf)
+        ;
+
+        
+    
+    
+            var circle_marker_1b72bc34c95c06197d9c9f6715d31164 = L.circleMarker(
+                [26.59936334, 76.78221066],
+                {"bubblingMouseEvents": true, "color": "lightgray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_8f402e5e6606fd47d4885126eec2e812 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7c1083372ed5e61852d3438a987af703 = $(`<div id="html_7c1083372ed5e61852d3438a987af703" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor18 - East Rajasthan</b><br>             <b style='font-size:14px; color:green;'>50.82 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_8f402e5e6606fd47d4885126eec2e812.setContent(html_7c1083372ed5e61852d3438a987af703);
+            
+        
+
+        circle_marker_1b72bc34c95c06197d9c9f6715d31164.bindPopup(popup_8f402e5e6606fd47d4885126eec2e812)
+        ;
+
+        
+    
+    
+            var circle_marker_56066e809e04cf643a9c1bc07d41685c = L.circleMarker(
+                [22.91949367, 75.03578348],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.678, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_d04160e1669b4a2b0308d3f4dca9dcef = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_65195c4dec3d45acdfc6bb1f0531015c = $(`<div id="html_65195c4dec3d45acdfc6bb1f0531015c" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor19 - West Madhya Pradesh</b><br>             <b style='font-size:14px; color:green;'>76.78 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_d04160e1669b4a2b0308d3f4dca9dcef.setContent(html_65195c4dec3d45acdfc6bb1f0531015c);
+            
+        
+
+        circle_marker_56066e809e04cf643a9c1bc07d41685c.bindPopup(popup_d04160e1669b4a2b0308d3f4dca9dcef)
+        ;
+
+        
+    
+    
+            var circle_marker_f4e0c66d115ddaffb9e2febfba1bb607 = L.circleMarker(
+                [28.093770000000006, 94.59213],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.289, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_e3dbe438e9872e0bf9d1899298452ba5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fef957f454595025be3ef20e7f31853f = $(`<div id="html_fef957f454595025be3ef20e7f31853f" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor2 - Arunachal Pradesh</b><br>             <b style='font-size:14px; color:orange;'>122.89 mm</b><br>             <span style='font-size:13px; color:orange;'>🌧️ Heavy Rain</span>         </div>         </div>`)[0];
+                popup_e3dbe438e9872e0bf9d1899298452ba5.setContent(html_fef957f454595025be3ef20e7f31853f);
+            
+        
+
+        circle_marker_f4e0c66d115ddaffb9e2febfba1bb607.bindPopup(popup_e3dbe438e9872e0bf9d1899298452ba5)
+        ;
+
+        
+    
+    
+            var circle_marker_b15c4e5b51787637ec4ac4a623f752cd = L.circleMarker(
+                [23.93761358, 81.11122264],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.03, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_0d18e66bb461cae046358f0f4e97ce4f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1b69abbd5b71f81b6dca9bfa989c0ad4 = $(`<div id="html_1b69abbd5b71f81b6dca9bfa989c0ad4" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor20 - East Madhya Pradesh</b><br>             <b style='font-size:14px; color:green;'>80.3 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_0d18e66bb461cae046358f0f4e97ce4f.setContent(html_1b69abbd5b71f81b6dca9bfa989c0ad4);
+            
+        
+
+        circle_marker_b15c4e5b51787637ec4ac4a623f752cd.bindPopup(popup_0d18e66bb461cae046358f0f4e97ce4f)
+        ;
+
+        
+    
+    
+            var circle_marker_b61ffde10482c6b8f207fb31c51ba1dc = L.circleMarker(
+                [23.05998087, 72.93097456],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.85, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_969d423e28053713dd09c98d0cfd3464 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_78b7575522324e3988c06b0314bb404b = $(`<div id="html_78b7575522324e3988c06b0314bb404b" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor21 - Gujarat Region</b><br>             <b style='font-size:14px; color:green;'>78.5 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_969d423e28053713dd09c98d0cfd3464.setContent(html_78b7575522324e3988c06b0314bb404b);
+            
+        
+
+        circle_marker_b61ffde10482c6b8f207fb31c51ba1dc.bindPopup(popup_969d423e28053713dd09c98d0cfd3464)
+        ;
+
+        
+    
+    
+            var circle_marker_de86d6ed44ada99c68ac61af763129a3 = L.circleMarker(
+                [23.18122776, 70.56891413],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_0a690890731af2c3b165e0107d45c253 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_553a64dca35b19a7778dbcc7101c5dfb = $(`<div id="html_553a64dca35b19a7778dbcc7101c5dfb" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor22 - Saurashtra & Kutch</b><br>             <b style='font-size:14px; color:green;'>56.11 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_0a690890731af2c3b165e0107d45c253.setContent(html_553a64dca35b19a7778dbcc7101c5dfb);
+            
+        
+
+        circle_marker_de86d6ed44ada99c68ac61af763129a3.bindPopup(popup_0a690890731af2c3b165e0107d45c253)
+        ;
+
+        
+    
+    
+            var circle_marker_841f6b998564f5ebcf1a1726cea6fd3a = L.circleMarker(
+                [15.30045, 74.08551],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_2348cdd85055c155cb150aca24d9deae = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b8209bcdc702e0d1bc7c0512cd024550 = $(`<div id="html_b8209bcdc702e0d1bc7c0512cd024550" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor23 - Konkan & Goa</b><br>             <b style='font-size:14px; color:green;'>54.55 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_2348cdd85055c155cb150aca24d9deae.setContent(html_b8209bcdc702e0d1bc7c0512cd024550);
+            
+        
+
+        circle_marker_841f6b998564f5ebcf1a1726cea6fd3a.bindPopup(popup_2348cdd85055c155cb150aca24d9deae)
+        ;
+
+        
+    
+    
+            var circle_marker_0cd4afbff25d29680e5a52c375e9ae44 = L.circleMarker(
+                [19.14486043, 74.77204737],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.391, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_3b1d97e812d5973b6b865b76b7f37ac4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1476b16e54455cfc8e44d60cdbff1903 = $(`<div id="html_1476b16e54455cfc8e44d60cdbff1903" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor24 - Madhya Maharashtra</b><br>             <b style='font-size:14px; color:orange;'>123.91 mm</b><br>             <span style='font-size:13px; color:orange;'>🌧️ Heavy Rain</span>         </div>         </div>`)[0];
+                popup_3b1d97e812d5973b6b865b76b7f37ac4.setContent(html_1476b16e54455cfc8e44d60cdbff1903);
+            
+        
+
+        circle_marker_0cd4afbff25d29680e5a52c375e9ae44.bindPopup(popup_3b1d97e812d5973b6b865b76b7f37ac4)
+        ;
+
+        
+    
+    
+            var circle_marker_d7ac77e7c44a6ffccaae862bbb4e0741 = L.circleMarker(
+                [19.1033404, 77.24397107],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.037999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_3a87c2148f4d41762f70fdc9c07599d2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ae87d3258f54620585dc839edc1456d5 = $(`<div id="html_ae87d3258f54620585dc839edc1456d5" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor25 - Matathwada</b><br>             <b style='font-size:14px; color:green;'>70.38 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_3a87c2148f4d41762f70fdc9c07599d2.setContent(html_ae87d3258f54620585dc839edc1456d5);
+            
+        
+
+        circle_marker_d7ac77e7c44a6ffccaae862bbb4e0741.bindPopup(popup_3a87c2148f4d41762f70fdc9c07599d2)
+        ;
+
+        
+    
+    
+            var circle_marker_d022be62f450ccc5431d360b90972aee = L.circleMarker(
+                [20.85850732, 79.27644168],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "beige", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.828999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_52459dc6fc73cd0b7c7bf032dbcfc54c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_81df83dac547c27078d3cc525e0042b0 = $(`<div id="html_81df83dac547c27078d3cc525e0042b0" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor26 - Vidarbha</b><br>             <b style='font-size:14px; color:orange;'>128.29 mm</b><br>             <span style='font-size:13px; color:orange;'>🌧️ Heavy Rain</span>         </div>         </div>`)[0];
+                popup_52459dc6fc73cd0b7c7bf032dbcfc54c.setContent(html_81df83dac547c27078d3cc525e0042b0);
+            
+        
+
+        circle_marker_d022be62f450ccc5431d360b90972aee.bindPopup(popup_52459dc6fc73cd0b7c7bf032dbcfc54c)
+        ;
+
+        
+    
+    
+            var circle_marker_6ec1a8193789584f0cbc5634b3cd0c1f = L.circleMarker(
+                [21.66374, 81.84064000000002],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.147, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_cabcfc77df8313afebd584cc3980ec0d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_595843949d2d6299853c22f61edd8ea8 = $(`<div id="html_595843949d2d6299853c22f61edd8ea8" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor27 - Chhattisgarh</b><br>             <b style='font-size:14px; color:green;'>71.47 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_cabcfc77df8313afebd584cc3980ec0d.setContent(html_595843949d2d6299853c22f61edd8ea8);
+            
+        
+
+        circle_marker_6ec1a8193789584f0cbc5634b3cd0c1f.bindPopup(popup_cabcfc77df8313afebd584cc3980ec0d)
+        ;
+
+        
+    
+    
+            var circle_marker_8aadd3c3489e30199ad7c2af22d605ec = L.circleMarker(
+                [17.53819295, 82.52010979],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkgreen", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.088, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_fbdd90a99a739e751b5cbf937d7d769e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_85c7d60863ee0958db74423d1c4e46a5 = $(`<div id="html_85c7d60863ee0958db74423d1c4e46a5" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor28 - Coastal Andhra Pradesh</b><br>             <b style='font-size:14px; color:orange;'>130.88 mm</b><br>             <span style='font-size:13px; color:orange;'>🌧️ Heavy Rain</span>         </div>         </div>`)[0];
+                popup_fbdd90a99a739e751b5cbf937d7d769e.setContent(html_85c7d60863ee0958db74423d1c4e46a5);
+            
+        
+
+        circle_marker_8aadd3c3489e30199ad7c2af22d605ec.bindPopup(popup_fbdd90a99a739e751b5cbf937d7d769e)
+        ;
+
+        
+    
+    
+            var circle_marker_98d1314bd66d89a86adc5160b96c2cd1 = L.circleMarker(
+                [17.84959, 79.11516999999998],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_db1d841f3abc42b33bf776ffe2a0f6e0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f913a51512b5079f6d108ca14eed7deb = $(`<div id="html_f913a51512b5079f6d108ca14eed7deb" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor29 - Telangana</b><br>             <b style='font-size:14px; color:green;'>53.71 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_db1d841f3abc42b33bf776ffe2a0f6e0.setContent(html_f913a51512b5079f6d108ca14eed7deb);
+            
+        
+
+        circle_marker_98d1314bd66d89a86adc5160b96c2cd1.bindPopup(popup_db1d841f3abc42b33bf776ffe2a0f6e0)
+        ;
+
+        
+    
+    
+            var circle_marker_a2072c1681b06b11401b1737d70f0e3c = L.circleMarker(
+                [25.91460265, 91.84475808],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.25, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_ea5c7686d8ae01f2912fe45b4c50bf50 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f504eb3fdf7be4ef6259b0e055d90049 = $(`<div id="html_f504eb3fdf7be4ef6259b0e055d90049" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor3 - Assam & Meghalaya</b><br>             <b style='font-size:14px; color:orange;'>132.5 mm</b><br>             <span style='font-size:13px; color:orange;'>🌧️ Heavy Rain</span>         </div>         </div>`)[0];
+                popup_ea5c7686d8ae01f2912fe45b4c50bf50.setContent(html_f504eb3fdf7be4ef6259b0e055d90049);
+            
+        
+
+        circle_marker_a2072c1681b06b11401b1737d70f0e3c.bindPopup(popup_ea5c7686d8ae01f2912fe45b4c50bf50)
+        ;
+
+        
+    
+    
+            var circle_marker_6a7771a5d2e56ccb7334b69a8a3a33cb = L.circleMarker(
+                [14.57183072, 78.02670181],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkpurple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.152, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_66ec420a199b17f37bbb82a13821cb1f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_63c42044d7d645c00a5dced955008c3d = $(`<div id="html_63c42044d7d645c00a5dced955008c3d" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor30 - Rayalseema</b><br>             <b style='font-size:14px; color:green;'>91.52 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_66ec420a199b17f37bbb82a13821cb1f.setContent(html_63c42044d7d645c00a5dced955008c3d);
+            
+        
+
+        circle_marker_6a7771a5d2e56ccb7334b69a8a3a33cb.bindPopup(popup_66ec420a199b17f37bbb82a13821cb1f)
+        ;
+
+        
+    
+    
+            var circle_marker_fa6ff4e1cabb1bc3c96ec60e6f537c28 = L.circleMarker(
+                [10.90943, 78.36653000000003],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.289, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_a512fb406e8441cd3ddc26d795dacccc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6f61e7350ec096ac4d7a371dfea4b2b3 = $(`<div id="html_6f61e7350ec096ac4d7a371dfea4b2b3" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor31 - Tamil Nadu</b><br>             <b style='font-size:14px; color:green;'>82.89 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_a512fb406e8441cd3ddc26d795dacccc.setContent(html_6f61e7350ec096ac4d7a371dfea4b2b3);
+            
+        
+
+        circle_marker_fa6ff4e1cabb1bc3c96ec60e6f537c28.bindPopup(popup_a512fb406e8441cd3ddc26d795dacccc)
+        ;
+
+        
+    
+    
+            var circle_marker_9b13e8549129a2c8fff83b1feb43bd5f = L.circleMarker(
+                [13.8431045, 74.6948562],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.427, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_42a266cace7ef3183f9b10a3967b19e7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c9253ecc254e075c5bb1c016fada6fcd = $(`<div id="html_c9253ecc254e075c5bb1c016fada6fcd" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor32 - Coastal Karnataka</b><br>             <b style='font-size:14px; color:green;'>84.27 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_42a266cace7ef3183f9b10a3967b19e7.setContent(html_c9253ecc254e075c5bb1c016fada6fcd);
+            
+        
+
+        circle_marker_9b13e8549129a2c8fff83b1feb43bd5f.bindPopup(popup_42a266cace7ef3183f9b10a3967b19e7)
+        ;
+
+        
+    
+    
+            var circle_marker_2fe4f597ed1a7999936256aefbaf0378 = L.circleMarker(
+                [16.200616399999998, 75.42220033],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.565, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_5fe3f451c1b5d73c82167fd344d8d091 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f04e994be621811ce3955cbe714e25a0 = $(`<div id="html_f04e994be621811ce3955cbe714e25a0" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor33 - North Interior Karnataka</b><br>             <b style='font-size:14px; color:green;'>65.65 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_5fe3f451c1b5d73c82167fd344d8d091.setContent(html_f04e994be621811ce3955cbe714e25a0);
+            
+        
+
+        circle_marker_2fe4f597ed1a7999936256aefbaf0378.bindPopup(popup_5fe3f451c1b5d73c82167fd344d8d091)
+        ;
+
+        
+    
+    
+            var circle_marker_997c34a401e8c4499cd47c4dfc135a0b = L.circleMarker(
+                [13.03310982, 77.31184868],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.7700000000000005, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_c840dfb45e14b9aabe832a93ba621eae = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_328a52cff5e6feb30fe3f718da36b1f5 = $(`<div id="html_328a52cff5e6feb30fe3f718da36b1f5" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor34 - South Interior Karnataka</b><br>             <b style='font-size:14px; color:green;'>67.7 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_c840dfb45e14b9aabe832a93ba621eae.setContent(html_328a52cff5e6feb30fe3f718da36b1f5);
+            
+        
+
+        circle_marker_997c34a401e8c4499cd47c4dfc135a0b.bindPopup(popup_c840dfb45e14b9aabe832a93ba621eae)
+        ;
+
+        
+    
+    
+            var circle_marker_6494707fd6b942040603d03ba194dd40 = L.circleMarker(
+                [10.35287, 76.51204],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.184000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_5cc30cb7d27fdb2fd23a14af69770c05 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a7c5a81f4d2478260c853049b4e0ecda = $(`<div id="html_a7c5a81f4d2478260c853049b4e0ecda" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor35 - Kerala</b><br>             <b style='font-size:14px; color:orange;'>101.84 mm</b><br>             <span style='font-size:13px; color:orange;'>🌧️ Heavy Rain</span>         </div>         </div>`)[0];
+                popup_5cc30cb7d27fdb2fd23a14af69770c05.setContent(html_a7c5a81f4d2478260c853049b4e0ecda);
+            
+        
+
+        circle_marker_6494707fd6b942040603d03ba194dd40.bindPopup(popup_5cc30cb7d27fdb2fd23a14af69770c05)
+        ;
+
+        
+    
+    
+            var circle_marker_41af71a1aefc9b5af03815e4924f3d7a = L.circleMarker(
+                [10.16061778, 73.51850944],
+                {"bubblingMouseEvents": true, "color": "lightgray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.802000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_b3efa6e84541c750bca361e936da598a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9dda398ef1744ced866cc41b3fd1c675 = $(`<div id="html_9dda398ef1744ced866cc41b3fd1c675" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor36 - Lakshadweep</b><br>             <b style='font-size:14px; color:orange;'>148.02 mm</b><br>             <span style='font-size:13px; color:orange;'>🌧️ Heavy Rain</span>         </div>         </div>`)[0];
+                popup_b3efa6e84541c750bca361e936da598a.setContent(html_9dda398ef1744ced866cc41b3fd1c675);
+            
+        
+
+        circle_marker_41af71a1aefc9b5af03815e4924f3d7a.bindPopup(popup_b3efa6e84541c750bca361e936da598a)
+        ;
+
+        
+    
+    
+            var circle_marker_516273e635dc352ad4d4bab24c163065 = L.circleMarker(
+                [24.77697494, 93.09209538],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.956999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_ec2da536fd19fefe9feb6b55e16c24fd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c893b9b487c70bb3bdd9fe2af244f11c = $(`<div id="html_c893b9b487c70bb3bdd9fe2af244f11c" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor4 - Naga Mani Mizo Tripura</b><br>             <b style='font-size:14px; color:green;'>69.57 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_ec2da536fd19fefe9feb6b55e16c24fd.setContent(html_c893b9b487c70bb3bdd9fe2af244f11c);
+            
+        
+
+        circle_marker_516273e635dc352ad4d4bab24c163065.bindPopup(popup_ec2da536fd19fefe9feb6b55e16c24fd)
+        ;
+
+        
+    
+    
+            var circle_marker_2eb7b986ddde0954e2ea245b39c0694a = L.circleMarker(
+                [26.38389746, 88.16117114],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_e4ae12390bcf1fbaa82bbd2b1ef67eb7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a48a89707b5256b4dcf062be9e0c03c7 = $(`<div id="html_a48a89707b5256b4dcf062be9e0c03c7" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor5 - Sub Himalayan West Bengal & Sikkim</b><br>             <b style='font-size:14px; color:green;'>51.62 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_e4ae12390bcf1fbaa82bbd2b1ef67eb7.setContent(html_a48a89707b5256b4dcf062be9e0c03c7);
+            
+        
+
+        circle_marker_2eb7b986ddde0954e2ea245b39c0694a.bindPopup(popup_e4ae12390bcf1fbaa82bbd2b1ef67eb7)
+        ;
+
+        
+    
+    
+            var circle_marker_1d992221aa1ea369af42b90d0204461b = L.circleMarker(
+                [24.58628043, 87.96797645],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.032, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_993c41c1fe4f3e165e5d4fceb6c4f78c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f30f2a0fa1246c470383a991b4babeac = $(`<div id="html_f30f2a0fa1246c470383a991b4babeac" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor6 - Gangetic West Bengal</b><br>             <b style='font-size:14px; color:orange;'>110.32 mm</b><br>             <span style='font-size:13px; color:orange;'>🌧️ Heavy Rain</span>         </div>         </div>`)[0];
+                popup_993c41c1fe4f3e165e5d4fceb6c4f78c.setContent(html_f30f2a0fa1246c470383a991b4babeac);
+            
+        
+
+        circle_marker_1d992221aa1ea369af42b90d0204461b.bindPopup(popup_993c41c1fe4f3e165e5d4fceb6c4f78c)
+        ;
+
+        
+    
+    
+            var circle_marker_9d0f30d67b087362a4674a96b472e2fa = L.circleMarker(
+                [20.54312, 84.68973000000003],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.491, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_31be98a119215a5f5d75269554513c2e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4f5d4e2543d02a29691ddbc48a0eba44 = $(`<div id="html_4f5d4e2543d02a29691ddbc48a0eba44" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor7 - Orissa</b><br>             <b style='font-size:14px; color:green;'>64.91 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_31be98a119215a5f5d75269554513c2e.setContent(html_4f5d4e2543d02a29691ddbc48a0eba44);
+            
+        
+
+        circle_marker_9d0f30d67b087362a4674a96b472e2fa.bindPopup(popup_31be98a119215a5f5d75269554513c2e)
+        ;
+
+        
+    
+    
+            var circle_marker_151aa04ab208687cf92ee45e9eddec12 = L.circleMarker(
+                [23.45598, 85.25573],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "beige", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.553, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_be997c7b0ce41ad96b5dac31f7d58c3d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2f4d3c41457dfa5a93deb99e1fa4d49d = $(`<div id="html_2f4d3c41457dfa5a93deb99e1fa4d49d" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor8 - Jharkhand</b><br>             <b style='font-size:14px; color:green;'>85.53 mm</b><br>             <span style='font-size:13px; color:green;'>☁️ Normal</span>         </div>         </div>`)[0];
+                popup_be997c7b0ce41ad96b5dac31f7d58c3d.setContent(html_2f4d3c41457dfa5a93deb99e1fa4d49d);
+            
+        
+
+        circle_marker_151aa04ab208687cf92ee45e9eddec12.bindPopup(popup_be997c7b0ce41ad96b5dac31f7d58c3d)
+        ;
+
+        
+    
+    
+            var circle_marker_d1523628eba993f0d66337bcebc5f185 = L.circleMarker(
+                [25.64408, 85.90651],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.97, "stroke": true, "weight": 3}
+            ).addTo(map_14cd51205fbd5760a10b6e8a4c3d9d09);
+        
+    
+        var popup_6d9a840321e124ae900c8b62ada94f54 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_578ea026abcdb1010ca9a8b202c76640 = $(`<div id="html_578ea026abcdb1010ca9a8b202c76640" style="width: 100.0%; height: 100.0%;">         <div style='font-size:14px; font-family:Arial;'>             <b style='font-size:15px; color:black;'>sensor9 - Bihar</b><br>             <b style='font-size:14px; color:orange;'>119.7 mm</b><br>             <span style='font-size:13px; color:orange;'>🌧️ Heavy Rain</span>         </div>         </div>`)[0];
+                popup_6d9a840321e124ae900c8b62ada94f54.setContent(html_578ea026abcdb1010ca9a8b202c76640);
+            
+        
+
+        circle_marker_d1523628eba993f0d66337bcebc5f185.bindPopup(popup_6d9a840321e124ae900c8b62ada94f54)
+        ;
+
+        
+    
+</script>
+</html>

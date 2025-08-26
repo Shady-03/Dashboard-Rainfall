@@ -1,0 +1,10 @@
+Flask
+pandas
+joblib
+tensorflow
+scikit-learn
+plotly
+paho-mqtt
+requests
+twilio
+keras

@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7be19a0252eb1c6a5c57e6e13d15f65e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7be19a0252eb1c6a5c57e6e13d15f65e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7be19a0252eb1c6a5c57e6e13d15f65e = L.map(
+                "map_7be19a0252eb1c6a5c57e6e13d15f65e",
+                {
+                    center: [22.5, 79.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer = L.tileLayer(
+    "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        subdomains: ["a", "b", "c"],
+        maxZoom: 19
+    }
+).addTo(map);
+        
+    
+            tile_layer_42ff31a141f248c1caddc9799fda3b44.addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+            var circle_marker_e5437c2bda732446b4667a49d0e04cab = L.circleMarker(
+                [28.6139, 77.209],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.943000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_9cced40034f09faf2d898e8f2f7ffd37 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_748fc0e1188d487fd0860a786b7d44ad = $(`<div id="html_748fc0e1188d487fd0860a786b7d44ad" style="width: 100.0%; height: 100.0%;"><b>New Delhi</b><br>Rainfall: 109.43 mm</div>`)[0];
+                popup_9cced40034f09faf2d898e8f2f7ffd37.setContent(html_748fc0e1188d487fd0860a786b7d44ad);
+            
+        
+
+        circle_marker_e5437c2bda732446b4667a49d0e04cab.bindPopup(popup_9cced40034f09faf2d898e8f2f7ffd37)
+        ;
+
+        
+    
+    
+            circle_marker_e5437c2bda732446b4667a49d0e04cab.bindTooltip(
+                `<div>
+                     New Delhi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_221efc9f1dc660a93ac74e534ddced90 = L.circleMarker(
+                [19.076, 72.8777],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_b899ab74502336a0482b584a6bded9cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe52907197f964cb173a08addc601a4e = $(`<div id="html_fe52907197f964cb173a08addc601a4e" style="width: 100.0%; height: 100.0%;"><b>Mumbai</b><br>Rainfall: 37.14 mm</div>`)[0];
+                popup_b899ab74502336a0482b584a6bded9cf.setContent(html_fe52907197f964cb173a08addc601a4e);
+            
+        
+
+        circle_marker_221efc9f1dc660a93ac74e534ddced90.bindPopup(popup_b899ab74502336a0482b584a6bded9cf)
+        ;
+
+        
+    
+    
+            circle_marker_221efc9f1dc660a93ac74e534ddced90.bindTooltip(
+                `<div>
+                     Mumbai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3433a1120650cc2db26d5797e5910b0d = L.circleMarker(
+                [18.5204, 73.8567],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_0d4c13dccca8f76f5c05810e74983955 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bcc3db80fc8e69d989146ddead15a139 = $(`<div id="html_bcc3db80fc8e69d989146ddead15a139" style="width: 100.0%; height: 100.0%;"><b>Pune</b><br>Rainfall: 137.29 mm</div>`)[0];
+                popup_0d4c13dccca8f76f5c05810e74983955.setContent(html_bcc3db80fc8e69d989146ddead15a139);
+            
+        
+
+        circle_marker_3433a1120650cc2db26d5797e5910b0d.bindPopup(popup_0d4c13dccca8f76f5c05810e74983955)
+        ;
+
+        
+    
+    
+            circle_marker_3433a1120650cc2db26d5797e5910b0d.bindTooltip(
+                `<div>
+                     Pune
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_845aa89e25b1e90dbc44cf1fd8b3cfba = L.circleMarker(
+                [21.1458, 79.0882],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_c172b44419f084ebb14e79c83c4c2d8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fda0e68407d5823ea42fc12f4547c41c = $(`<div id="html_fda0e68407d5823ea42fc12f4547c41c" style="width: 100.0%; height: 100.0%;"><b>Nagpur</b><br>Rainfall: 140.41 mm</div>`)[0];
+                popup_c172b44419f084ebb14e79c83c4c2d8f.setContent(html_fda0e68407d5823ea42fc12f4547c41c);
+            
+        
+
+        circle_marker_845aa89e25b1e90dbc44cf1fd8b3cfba.bindPopup(popup_c172b44419f084ebb14e79c83c4c2d8f)
+        ;
+
+        
+    
+    
+            circle_marker_845aa89e25b1e90dbc44cf1fd8b3cfba.bindTooltip(
+                `<div>
+                     Nagpur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f41dd063c4f005a6863580636b0bc10 = L.circleMarker(
+                [20.011, 73.7903],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_cc1d5174fcc52c353acd7c62be52a308 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0fdf9d90ebe36dbc7205f91327fdc5b = $(`<div id="html_d0fdf9d90ebe36dbc7205f91327fdc5b" style="width: 100.0%; height: 100.0%;"><b>Nashik</b><br>Rainfall: 120.01 mm</div>`)[0];
+                popup_cc1d5174fcc52c353acd7c62be52a308.setContent(html_d0fdf9d90ebe36dbc7205f91327fdc5b);
+            
+        
+
+        circle_marker_7f41dd063c4f005a6863580636b0bc10.bindPopup(popup_cc1d5174fcc52c353acd7c62be52a308)
+        ;
+
+        
+    
+    
+            circle_marker_7f41dd063c4f005a6863580636b0bc10.bindTooltip(
+                `<div>
+                     Nashik
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a04c2dc84298cbae5b3451bb0cecb141 = L.circleMarker(
+                [19.8762, 75.3433],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_f0f9923054e0a6142b38fb4da3100c5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06c437b9b6f710fec508ed9c64734df6 = $(`<div id="html_06c437b9b6f710fec508ed9c64734df6" style="width: 100.0%; height: 100.0%;"><b>Aurangabad</b><br>Rainfall: 31.26 mm</div>`)[0];
+                popup_f0f9923054e0a6142b38fb4da3100c5d.setContent(html_06c437b9b6f710fec508ed9c64734df6);
+            
+        
+
+        circle_marker_a04c2dc84298cbae5b3451bb0cecb141.bindPopup(popup_f0f9923054e0a6142b38fb4da3100c5d)
+        ;
+
+        
+    
+    
+            circle_marker_a04c2dc84298cbae5b3451bb0cecb141.bindTooltip(
+                `<div>
+                     Aurangabad
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c3c5df3f0a9c3e96454203b0843c7ae = L.circleMarker(
+                [17.6599, 75.9064],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_bdeac5ebaa3961f4aa6972ced0335815 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_351f2d33e6d8e12cfe06ade35b078a9c = $(`<div id="html_351f2d33e6d8e12cfe06ade35b078a9c" style="width: 100.0%; height: 100.0%;"><b>Solapur</b><br>Rainfall: 49.08 mm</div>`)[0];
+                popup_bdeac5ebaa3961f4aa6972ced0335815.setContent(html_351f2d33e6d8e12cfe06ade35b078a9c);
+            
+        
+
+        circle_marker_8c3c5df3f0a9c3e96454203b0843c7ae.bindPopup(popup_bdeac5ebaa3961f4aa6972ced0335815)
+        ;
+
+        
+    
+    
+            circle_marker_8c3c5df3f0a9c3e96454203b0843c7ae.bindTooltip(
+                `<div>
+                     Solapur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_17f58a77e3c243b51f50d996b81417ad = L.circleMarker(
+                [12.9716, 77.5946],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.048, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_530f77bfd14517ae69283ff56e78af43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cff777ed97184d7deb7029271cfb621f = $(`<div id="html_cff777ed97184d7deb7029271cfb621f" style="width: 100.0%; height: 100.0%;"><b>Bengaluru</b><br>Rainfall: 50.48 mm</div>`)[0];
+                popup_530f77bfd14517ae69283ff56e78af43.setContent(html_cff777ed97184d7deb7029271cfb621f);
+            
+        
+
+        circle_marker_17f58a77e3c243b51f50d996b81417ad.bindPopup(popup_530f77bfd14517ae69283ff56e78af43)
+        ;
+
+        
+    
+    
+            circle_marker_17f58a77e3c243b51f50d996b81417ad.bindTooltip(
+                `<div>
+                     Bengaluru
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_92293072100c983245e2574c13ac9a4c = L.circleMarker(
+                [12.2958, 76.6394],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_ee86d6f7e15431cbd32ec0f4e0260ab7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c275c6da9ecfd0f2c04189b457b80169 = $(`<div id="html_c275c6da9ecfd0f2c04189b457b80169" style="width: 100.0%; height: 100.0%;"><b>Mysuru</b><br>Rainfall: 194.57 mm</div>`)[0];
+                popup_ee86d6f7e15431cbd32ec0f4e0260ab7.setContent(html_c275c6da9ecfd0f2c04189b457b80169);
+            
+        
+
+        circle_marker_92293072100c983245e2574c13ac9a4c.bindPopup(popup_ee86d6f7e15431cbd32ec0f4e0260ab7)
+        ;
+
+        
+    
+    
+            circle_marker_92293072100c983245e2574c13ac9a4c.bindTooltip(
+                `<div>
+                     Mysuru
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ed3322d481e37d6cbe9499f26a0fd68d = L.circleMarker(
+                [12.9141, 74.856],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_f596d395565ed7acc2c56185c3440ab8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b23f5a4db0db00d4fde82c45f66c312f = $(`<div id="html_b23f5a4db0db00d4fde82c45f66c312f" style="width: 100.0%; height: 100.0%;"><b>Mangaluru</b><br>Rainfall: 32.35 mm</div>`)[0];
+                popup_f596d395565ed7acc2c56185c3440ab8.setContent(html_b23f5a4db0db00d4fde82c45f66c312f);
+            
+        
+
+        circle_marker_ed3322d481e37d6cbe9499f26a0fd68d.bindPopup(popup_f596d395565ed7acc2c56185c3440ab8)
+        ;
+
+        
+    
+    
+            circle_marker_ed3322d481e37d6cbe9499f26a0fd68d.bindTooltip(
+                `<div>
+                     Mangaluru
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_805876c730b3c08f3295cb9823468813 = L.circleMarker(
+                [15.3647, 75.1239],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_534b82f25845a8abab82d25835cfaec3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52e9ebeb2c3b0de4ecb807427a2c3f51 = $(`<div id="html_52e9ebeb2c3b0de4ecb807427a2c3f51" style="width: 100.0%; height: 100.0%;"><b>Hubballi</b><br>Rainfall: 180.95 mm</div>`)[0];
+                popup_534b82f25845a8abab82d25835cfaec3.setContent(html_52e9ebeb2c3b0de4ecb807427a2c3f51);
+            
+        
+
+        circle_marker_805876c730b3c08f3295cb9823468813.bindPopup(popup_534b82f25845a8abab82d25835cfaec3)
+        ;
+
+        
+    
+    
+            circle_marker_805876c730b3c08f3295cb9823468813.bindTooltip(
+                `<div>
+                     Hubballi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5bdf6468cc714370f2812aa74431ecc2 = L.circleMarker(
+                [15.8497, 74.4977],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_63bfa6ce44f4ff406bc4875fc6be2865 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16f43aab2cfef46b35fb38a82c17da64 = $(`<div id="html_16f43aab2cfef46b35fb38a82c17da64" style="width: 100.0%; height: 100.0%;"><b>Belagavi</b><br>Rainfall: 168.19 mm</div>`)[0];
+                popup_63bfa6ce44f4ff406bc4875fc6be2865.setContent(html_16f43aab2cfef46b35fb38a82c17da64);
+            
+        
+
+        circle_marker_5bdf6468cc714370f2812aa74431ecc2.bindPopup(popup_63bfa6ce44f4ff406bc4875fc6be2865)
+        ;
+
+        
+    
+    
+            circle_marker_5bdf6468cc714370f2812aa74431ecc2.bindTooltip(
+                `<div>
+                     Belagavi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95ba3074e6fd085f12ce74332757b27e = L.circleMarker(
+                [14.4661, 75.9238],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_cebe03cd628375faea1d3f81e38ffb8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc2c63522de7a37d90870a0a1b997d94 = $(`<div id="html_bc2c63522de7a37d90870a0a1b997d94" style="width: 100.0%; height: 100.0%;"><b>Davangere</b><br>Rainfall: 133.63 mm</div>`)[0];
+                popup_cebe03cd628375faea1d3f81e38ffb8c.setContent(html_bc2c63522de7a37d90870a0a1b997d94);
+            
+        
+
+        circle_marker_95ba3074e6fd085f12ce74332757b27e.bindPopup(popup_cebe03cd628375faea1d3f81e38ffb8c)
+        ;
+
+        
+    
+    
+            circle_marker_95ba3074e6fd085f12ce74332757b27e.bindTooltip(
+                `<div>
+                     Davangere
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f7595a6d2b4bc1bf2b8095c9838ea8d2 = L.circleMarker(
+                [13.0827, 80.2707],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_5457122e7058e556925e966f4e55497c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7bbb41c1632eed7c783a85717e7c01fc = $(`<div id="html_7bbb41c1632eed7c783a85717e7c01fc" style="width: 100.0%; height: 100.0%;"><b>Chennai</b><br>Rainfall: 178.53 mm</div>`)[0];
+                popup_5457122e7058e556925e966f4e55497c.setContent(html_7bbb41c1632eed7c783a85717e7c01fc);
+            
+        
+
+        circle_marker_f7595a6d2b4bc1bf2b8095c9838ea8d2.bindPopup(popup_5457122e7058e556925e966f4e55497c)
+        ;
+
+        
+    
+    
+            circle_marker_f7595a6d2b4bc1bf2b8095c9838ea8d2.bindTooltip(
+                `<div>
+                     Chennai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_45a961a24ff72ecbd6ca43009d086fec = L.circleMarker(
+                [11.0168, 76.9558],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.026, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_9a5e9bba066ea2da00edd7d2ad86805f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce97c82b8c1d724fb1c1c6eb6b9532d4 = $(`<div id="html_ce97c82b8c1d724fb1c1c6eb6b9532d4" style="width: 100.0%; height: 100.0%;"><b>Coimbatore</b><br>Rainfall: 110.26 mm</div>`)[0];
+                popup_9a5e9bba066ea2da00edd7d2ad86805f.setContent(html_ce97c82b8c1d724fb1c1c6eb6b9532d4);
+            
+        
+
+        circle_marker_45a961a24ff72ecbd6ca43009d086fec.bindPopup(popup_9a5e9bba066ea2da00edd7d2ad86805f)
+        ;
+
+        
+    
+    
+            circle_marker_45a961a24ff72ecbd6ca43009d086fec.bindTooltip(
+                `<div>
+                     Coimbatore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d7c8ad6ea1226ae201d1b94cb31a6de = L.circleMarker(
+                [9.9252, 78.1198],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.8, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_568baffcf63697d68cfbb03bcbd3838a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b3b75b3fb03b4544fa6ba3b0e729614 = $(`<div id="html_9b3b75b3fb03b4544fa6ba3b0e729614" style="width: 100.0%; height: 100.0%;"><b>Madurai</b><br>Rainfall: 58.0 mm</div>`)[0];
+                popup_568baffcf63697d68cfbb03bcbd3838a.setContent(html_9b3b75b3fb03b4544fa6ba3b0e729614);
+            
+        
+
+        circle_marker_9d7c8ad6ea1226ae201d1b94cb31a6de.bindPopup(popup_568baffcf63697d68cfbb03bcbd3838a)
+        ;
+
+        
+    
+    
+            circle_marker_9d7c8ad6ea1226ae201d1b94cb31a6de.bindTooltip(
+                `<div>
+                     Madurai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_182464badd51015977b52497a00ec7d1 = L.circleMarker(
+                [11.6643, 78.146],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_16bc51c0e8b70a1f30e381a60556ef0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7a15789ca9471b82b5a6b90eea742dc = $(`<div id="html_b7a15789ca9471b82b5a6b90eea742dc" style="width: 100.0%; height: 100.0%;"><b>Salem</b><br>Rainfall: 4.0 mm</div>`)[0];
+                popup_16bc51c0e8b70a1f30e381a60556ef0d.setContent(html_b7a15789ca9471b82b5a6b90eea742dc);
+            
+        
+
+        circle_marker_182464badd51015977b52497a00ec7d1.bindPopup(popup_16bc51c0e8b70a1f30e381a60556ef0d)
+        ;
+
+        
+    
+    
+            circle_marker_182464badd51015977b52497a00ec7d1.bindTooltip(
+                `<div>
+                     Salem
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_203b67150d6b274f4b861b43dc76c565 = L.circleMarker(
+                [10.7905, 78.7047],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.190000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_f068363a3a3d1ff56022547fc6230da9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35f75332aaeaaf7e0493fdf8500c4638 = $(`<div id="html_35f75332aaeaaf7e0493fdf8500c4638" style="width: 100.0%; height: 100.0%;"><b>Tiruchirappalli</b><br>Rainfall: 91.9 mm</div>`)[0];
+                popup_f068363a3a3d1ff56022547fc6230da9.setContent(html_35f75332aaeaaf7e0493fdf8500c4638);
+            
+        
+
+        circle_marker_203b67150d6b274f4b861b43dc76c565.bindPopup(popup_f068363a3a3d1ff56022547fc6230da9)
+        ;
+
+        
+    
+    
+            circle_marker_203b67150d6b274f4b861b43dc76c565.bindTooltip(
+                `<div>
+                     Tiruchirappalli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_de02939a92959644262af27d2f44a0a4 = L.circleMarker(
+                [8.7139, 77.7567],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.985, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_ccdc8439e0ac486cad36c381ed847495 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d056202abc124d5790a147e0f84c6a3 = $(`<div id="html_8d056202abc124d5790a147e0f84c6a3" style="width: 100.0%; height: 100.0%;"><b>Tirunelveli</b><br>Rainfall: 59.85 mm</div>`)[0];
+                popup_ccdc8439e0ac486cad36c381ed847495.setContent(html_8d056202abc124d5790a147e0f84c6a3);
+            
+        
+
+        circle_marker_de02939a92959644262af27d2f44a0a4.bindPopup(popup_ccdc8439e0ac486cad36c381ed847495)
+        ;
+
+        
+    
+    
+            circle_marker_de02939a92959644262af27d2f44a0a4.bindTooltip(
+                `<div>
+                     Tirunelveli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b23fdc2404c55863586a67dd4ac4430a = L.circleMarker(
+                [17.385, 78.4867],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_2f270f0e2a7919997f5e256cc8f20528 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6467243b22e34b8596a598733dc53f36 = $(`<div id="html_6467243b22e34b8596a598733dc53f36" style="width: 100.0%; height: 100.0%;"><b>Hyderabad</b><br>Rainfall: 156.66 mm</div>`)[0];
+                popup_2f270f0e2a7919997f5e256cc8f20528.setContent(html_6467243b22e34b8596a598733dc53f36);
+            
+        
+
+        circle_marker_b23fdc2404c55863586a67dd4ac4430a.bindPopup(popup_2f270f0e2a7919997f5e256cc8f20528)
+        ;
+
+        
+    
+    
+            circle_marker_b23fdc2404c55863586a67dd4ac4430a.bindTooltip(
+                `<div>
+                     Hyderabad
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9261bc67cf73bc04180cedee020f767 = L.circleMarker(
+                [17.9784, 79.5941],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_79b866417f697964018e5f0224867a1a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aff170c4a4b29034061843bd2dcfa1d0 = $(`<div id="html_aff170c4a4b29034061843bd2dcfa1d0" style="width: 100.0%; height: 100.0%;"><b>Warangal</b><br>Rainfall: 47.93 mm</div>`)[0];
+                popup_79b866417f697964018e5f0224867a1a.setContent(html_aff170c4a4b29034061843bd2dcfa1d0);
+            
+        
+
+        circle_marker_d9261bc67cf73bc04180cedee020f767.bindPopup(popup_79b866417f697964018e5f0224867a1a)
+        ;
+
+        
+    
+    
+            circle_marker_d9261bc67cf73bc04180cedee020f767.bindTooltip(
+                `<div>
+                     Warangal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d811c60ede6717ceb3b77779160d69f1 = L.circleMarker(
+                [18.4386, 79.1288],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_56cf23be98b4c09c71874604db0923a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac14f6565102d72fc952b5bbaa666758 = $(`<div id="html_ac14f6565102d72fc952b5bbaa666758" style="width: 100.0%; height: 100.0%;"><b>Karimnagar</b><br>Rainfall: 134.55 mm</div>`)[0];
+                popup_56cf23be98b4c09c71874604db0923a8.setContent(html_ac14f6565102d72fc952b5bbaa666758);
+            
+        
+
+        circle_marker_d811c60ede6717ceb3b77779160d69f1.bindPopup(popup_56cf23be98b4c09c71874604db0923a8)
+        ;
+
+        
+    
+    
+            circle_marker_d811c60ede6717ceb3b77779160d69f1.bindTooltip(
+                `<div>
+                     Karimnagar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_79089ca370ac624fa913546a40914ae2 = L.circleMarker(
+                [17.2473, 80.1514],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_ca3617f7f32ad03c4bc424a7eab282a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a9f988cee3693b1345abf015c792556 = $(`<div id="html_4a9f988cee3693b1345abf015c792556" style="width: 100.0%; height: 100.0%;"><b>Khammam</b><br>Rainfall: 173.59 mm</div>`)[0];
+                popup_ca3617f7f32ad03c4bc424a7eab282a9.setContent(html_4a9f988cee3693b1345abf015c792556);
+            
+        
+
+        circle_marker_79089ca370ac624fa913546a40914ae2.bindPopup(popup_ca3617f7f32ad03c4bc424a7eab282a9)
+        ;
+
+        
+    
+    
+            circle_marker_79089ca370ac624fa913546a40914ae2.bindTooltip(
+                `<div>
+                     Khammam
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d43e4bbd5bf6d1bd301d17062cb72121 = L.circleMarker(
+                [18.6725, 78.0941],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.619, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_ecb1cfc7bf544ac7dfb1624e0e9aaa90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6ab9c7d23b05fb8313022c91f009aef = $(`<div id="html_d6ab9c7d23b05fb8313022c91f009aef" style="width: 100.0%; height: 100.0%;"><b>Nizamabad</b><br>Rainfall: 66.19 mm</div>`)[0];
+                popup_ecb1cfc7bf544ac7dfb1624e0e9aaa90.setContent(html_d6ab9c7d23b05fb8313022c91f009aef);
+            
+        
+
+        circle_marker_d43e4bbd5bf6d1bd301d17062cb72121.bindPopup(popup_ecb1cfc7bf544ac7dfb1624e0e9aaa90)
+        ;
+
+        
+    
+    
+            circle_marker_d43e4bbd5bf6d1bd301d17062cb72121.bindTooltip(
+                `<div>
+                     Nizamabad
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f93a8208c0fc920f275e6e57750ca884 = L.circleMarker(
+                [26.8467, 80.9462],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_9bb2b5520daaa2da8f313fc282e11f1e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e1beceb4c3c3fb5de8948358a2f1a60 = $(`<div id="html_1e1beceb4c3c3fb5de8948358a2f1a60" style="width: 100.0%; height: 100.0%;"><b>Lucknow</b><br>Rainfall: 145.54 mm</div>`)[0];
+                popup_9bb2b5520daaa2da8f313fc282e11f1e.setContent(html_1e1beceb4c3c3fb5de8948358a2f1a60);
+            
+        
+
+        circle_marker_f93a8208c0fc920f275e6e57750ca884.bindPopup(popup_9bb2b5520daaa2da8f313fc282e11f1e)
+        ;
+
+        
+    
+    
+            circle_marker_f93a8208c0fc920f275e6e57750ca884.bindTooltip(
+                `<div>
+                     Lucknow
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2bfa82b02df1a6882f0edcd760fa2f1 = L.circleMarker(
+                [26.4499, 80.3319],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_113a24b9834353adcd00a35886cc91b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52c1e264ec47509842f401ccb355fcbe = $(`<div id="html_52c1e264ec47509842f401ccb355fcbe" style="width: 100.0%; height: 100.0%;"><b>Kanpur</b><br>Rainfall: 151.88 mm</div>`)[0];
+                popup_113a24b9834353adcd00a35886cc91b3.setContent(html_52c1e264ec47509842f401ccb355fcbe);
+            
+        
+
+        circle_marker_c2bfa82b02df1a6882f0edcd760fa2f1.bindPopup(popup_113a24b9834353adcd00a35886cc91b3)
+        ;
+
+        
+    
+    
+            circle_marker_c2bfa82b02df1a6882f0edcd760fa2f1.bindTooltip(
+                `<div>
+                     Kanpur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_663e5c5750da46d23890df4a9fb087a4 = L.circleMarker(
+                [25.3176, 82.9739],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_3815b8efb913aae81ac5a95db7c3cabf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b6a8120dc464455e5e21267299be9cca = $(`<div id="html_b6a8120dc464455e5e21267299be9cca" style="width: 100.0%; height: 100.0%;"><b>Varanasi</b><br>Rainfall: 138.37 mm</div>`)[0];
+                popup_3815b8efb913aae81ac5a95db7c3cabf.setContent(html_b6a8120dc464455e5e21267299be9cca);
+            
+        
+
+        circle_marker_663e5c5750da46d23890df4a9fb087a4.bindPopup(popup_3815b8efb913aae81ac5a95db7c3cabf)
+        ;
+
+        
+    
+    
+            circle_marker_663e5c5750da46d23890df4a9fb087a4.bindTooltip(
+                `<div>
+                     Varanasi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f58278d0e23a5231662d5d6c233e56a8 = L.circleMarker(
+                [25.4358, 81.8463],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.259, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_bd30a21c1deac2231b264f4332fca765 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8b85cb0bd2292b7f2d1c9a945b49e3a = $(`<div id="html_d8b85cb0bd2292b7f2d1c9a945b49e3a" style="width: 100.0%; height: 100.0%;"><b>Prayagraj</b><br>Rainfall: 112.59 mm</div>`)[0];
+                popup_bd30a21c1deac2231b264f4332fca765.setContent(html_d8b85cb0bd2292b7f2d1c9a945b49e3a);
+            
+        
+
+        circle_marker_f58278d0e23a5231662d5d6c233e56a8.bindPopup(popup_bd30a21c1deac2231b264f4332fca765)
+        ;
+
+        
+    
+    
+            circle_marker_f58278d0e23a5231662d5d6c233e56a8.bindTooltip(
+                `<div>
+                     Prayagraj
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52ae0c5f139278e3120067dcaa186887 = L.circleMarker(
+                [27.1767, 78.0081],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.656, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_ec0aa427a0b24778ae24868f5d31e582 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f47be962c50c09b5f158580809ddae7 = $(`<div id="html_2f47be962c50c09b5f158580809ddae7" style="width: 100.0%; height: 100.0%;"><b>Agra</b><br>Rainfall: 116.56 mm</div>`)[0];
+                popup_ec0aa427a0b24778ae24868f5d31e582.setContent(html_2f47be962c50c09b5f158580809ddae7);
+            
+        
+
+        circle_marker_52ae0c5f139278e3120067dcaa186887.bindPopup(popup_ec0aa427a0b24778ae24868f5d31e582)
+        ;
+
+        
+    
+    
+            circle_marker_52ae0c5f139278e3120067dcaa186887.bindTooltip(
+                `<div>
+                     Agra
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6dbc1f0e7a421064893ba55f1c0cc75c = L.circleMarker(
+                [28.6692, 77.4538],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_0f027fda2d7a67141e1cad69007db246 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3ada34823034ce3bb064bf94f658db4 = $(`<div id="html_c3ada34823034ce3bb064bf94f658db4" style="width: 100.0%; height: 100.0%;"><b>Ghaziabad</b><br>Rainfall: 159.74 mm</div>`)[0];
+                popup_0f027fda2d7a67141e1cad69007db246.setContent(html_c3ada34823034ce3bb064bf94f658db4);
+            
+        
+
+        circle_marker_6dbc1f0e7a421064893ba55f1c0cc75c.bindPopup(popup_0f027fda2d7a67141e1cad69007db246)
+        ;
+
+        
+    
+    
+            circle_marker_6dbc1f0e7a421064893ba55f1c0cc75c.bindTooltip(
+                `<div>
+                     Ghaziabad
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b4bbe3b82f3dfd842e5d6513b8d1bdbf = L.circleMarker(
+                [28.9845, 77.7064],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_7be19a0252eb1c6a5c57e6e13d15f65e);
+        
+    
+        var popup_e3dadbf82b3372084dbfc461255bf3b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0433130bcb6d91faa65171774b34369 = $(`<div id="html_d0433130bcb6d91faa65171774b34369" style="width: 100.0%; height: 100.0%;"><b>Meerut</b><br>Rainfall: 121.87 mm</div>`)[0];
+                popup_e3dadbf82b3372084dbfc461255bf3b0.setContent(html_d0433130bcb6d91faa65171774b34369);
+            
+        
+
+        circle_marker_b4bbe3b82f3dfd842e5d6513b8d1bdbf.bindPopup(popup_e3dadbf82b3372084dbfc461255bf3b0)
+        ;
+
+        
+    
+    
+            circle_marker_b4bbe3b82f3dfd842e5d6513b8d1bdbf.bindTooltip(
+                `<div>
+                     Meerut
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

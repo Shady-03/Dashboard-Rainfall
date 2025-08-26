@@ -1,0 +1,254 @@
+[
+  {
+    "sensor_id": "sensor1",
+    "subdivision": "Andaman & Nicobar Islands",
+    "value": 59.9,
+    "lat": 12.61124,
+    "lon": 92.83165
+  },
+  {
+    "sensor_id": "sensor2",
+    "subdivision": "Arunachal Pradesh",
+    "value": 115.31,
+    "lat": 28.093770000000006,
+    "lon": 94.59213
+  },
+  {
+    "sensor_id": "sensor3",
+    "subdivision": "Assam & Meghalaya",
+    "value": 118.26,
+    "lat": 25.91460265,
+    "lon": 91.84475808
+  },
+  {
+    "sensor_id": "sensor4",
+    "subdivision": "Naga Mani Mizo Tripura",
+    "value": 70.44,
+    "lat": 24.77697494,
+    "lon": 93.09209538
+  },
+  {
+    "sensor_id": "sensor5",
+    "subdivision": "Sub Himalayan West Bengal & Sikkim",
+    "value": 103.57,
+    "lat": 26.38389746,
+    "lon": 88.16117114
+  },
+  {
+    "sensor_id": "sensor6",
+    "subdivision": "Gangetic West Bengal",
+    "value": 135.55,
+    "lat": 24.58628043,
+    "lon": 87.96797645
+  },
+  {
+    "sensor_id": "sensor7",
+    "subdivision": "Orissa",
+    "value": 92.55,
+    "lat": 20.54312,
+    "lon": 84.68973000000003
+  },
+  {
+    "sensor_id": "sensor8",
+    "subdivision": "Jharkhand",
+    "value": 91.84,
+    "lat": 23.45598,
+    "lon": 85.25573
+  },
+  {
+    "sensor_id": "sensor9",
+    "subdivision": "Bihar",
+    "value": 95.76,
+    "lat": 25.64408,
+    "lon": 85.90651
+  },
+  {
+    "sensor_id": "sensor10",
+    "subdivision": "East Uttar Pradesh",
+    "value": 124.21,
+    "lat": 26.61872396,
+    "lon": 82.86899052
+  },
+  {
+    "sensor_id": "sensor11",
+    "subdivision": "West Uttar Pradesh",
+    "value": 108.25,
+    "lat": 27.71343038,
+    "lon": 78.29867825
+  },
+  {
+    "sensor_id": "sensor12",
+    "subdivision": "Uttarakhand",
+    "value": 82.89,
+    "lat": 30.04174,
+    "lon": 79.08969
+  },
+  {
+    "sensor_id": "sensor13",
+    "subdivision": "Haryana Delhi & Chandigarh",
+    "value": 104.8,
+    "lat": 29.45568526,
+    "lon": 76.79243340000002
+  },
+  {
+    "sensor_id": "sensor14",
+    "subdivision": "Punjab",
+    "value": 130.51,
+    "lat": 30.92932,
+    "lon": 75.50048000000002
+  },
+  {
+    "sensor_id": "sensor15",
+    "subdivision": "Himachal Pradesh",
+    "value": 71.29,
+    "lat": 31.81676,
+    "lon": 77.34931999999998
+  },
+  {
+    "sensor_id": "sensor16",
+    "subdivision": "Jammu & Kashmir",
+    "value": 135.89,
+    "lat": 33.55745,
+    "lon": 75.06152
+  },
+  {
+    "sensor_id": "sensor17",
+    "subdivision": "West Rajasthan",
+    "value": 138.28,
+    "lat": 26.81527643,
+    "lon": 71.00340235
+  },
+  {
+    "sensor_id": "sensor18",
+    "subdivision": "East Rajasthan",
+    "value": 131.41,
+    "lat": 26.59936334,
+    "lon": 76.78221066
+  },
+  {
+    "sensor_id": "sensor19",
+    "subdivision": "West Madhya Pradesh",
+    "value": 103.8,
+    "lat": 22.91949367,
+    "lon": 75.03578348
+  },
+  {
+    "sensor_id": "sensor20",
+    "subdivision": "East Madhya Pradesh",
+    "value": 79.57,
+    "lat": 23.93761358,
+    "lon": 81.11122264
+  },
+  {
+    "sensor_id": "sensor21",
+    "subdivision": "Gujarat Region",
+    "value": 65.17,
+    "lat": 23.05998087,
+    "lon": 72.93097456
+  },
+  {
+    "sensor_id": "sensor22",
+    "subdivision": "Saurashtra & Kutch",
+    "value": 100.82,
+    "lat": 23.18122776,
+    "lon": 70.56891413
+  },
+  {
+    "sensor_id": "sensor23",
+    "subdivision": "Konkan & Goa",
+    "value": 128.25,
+    "lat": 15.30045,
+    "lon": 74.08551
+  },
+  {
+    "sensor_id": "sensor24",
+    "subdivision": "Madhya Maharashtra",
+    "value": 55.14,
+    "lat": 19.14486043,
+    "lon": 74.77204737
+  },
+  {
+    "sensor_id": "sensor25",
+    "subdivision": "Matathwada",
+    "value": 118.38,
+    "lat": 19.1033404,
+    "lon": 77.24397107
+  },
+  {
+    "sensor_id": "sensor26",
+    "subdivision": "Vidarbha",
+    "value": 97.05,
+    "lat": 20.85850732,
+    "lon": 79.27644168
+  },
+  {
+    "sensor_id": "sensor27",
+    "subdivision": "Chhattisgarh",
+    "value": 70.55,
+    "lat": 21.66374,
+    "lon": 81.84064000000002
+  },
+  {
+    "sensor_id": "sensor28",
+    "subdivision": "Coastal Andhra Pradesh",
+    "value": 134.01,
+    "lat": 17.53819295,
+    "lon": 82.52010979
+  },
+  {
+    "sensor_id": "sensor29",
+    "subdivision": "Telangana",
+    "value": 69.0,
+    "lat": 17.84959,
+    "lon": 79.11516999999998
+  },
+  {
+    "sensor_id": "sensor30",
+    "subdivision": "Rayalseema",
+    "value": 58.64,
+    "lat": 14.57183072,
+    "lon": 78.02670181
+  },
+  {
+    "sensor_id": "sensor31",
+    "subdivision": "Tamil Nadu",
+    "value": 86.02,
+    "lat": 10.90943,
+    "lon": 78.36653000000003
+  },
+  {
+    "sensor_id": "sensor32",
+    "subdivision": "Coastal Karnataka",
+    "value": 90.55,
+    "lat": 13.8431045,
+    "lon": 74.6948562
+  },
+  {
+    "sensor_id": "sensor33",
+    "subdivision": "North Interior Karnataka",
+    "value": 90.02,
+    "lat": 16.200616399999998,
+    "lon": 75.42220033
+  },
+  {
+    "sensor_id": "sensor34",
+    "subdivision": "South Interior Karnataka",
+    "value": 77.02,
+    "lat": 13.03310982,
+    "lon": 77.31184868
+  },
+  {
+    "sensor_id": "sensor35",
+    "subdivision": "Kerala",
+    "value": 134.76,
+    "lat": 10.35287,
+    "lon": 76.51204
+  },
+  {
+    "sensor_id": "sensor36",
+    "subdivision": "Lakshadweep",
+    "value": 64.99,
+    "lat": 10.16061778,
+    "lon": 73.51850944
+  }
+]

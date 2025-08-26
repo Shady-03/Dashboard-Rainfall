@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head><title>Rainfall App</title></head>
+<body>
+  <h1>Rainfall Prediction</h1>
+  <form method="post">
+    <input name="subdivision" placeholder="Subdivision" />
+    <button type="submit">Predict</button>
+  </form>
+  {% if prediction %}
+  <p>Prediction: {{ prediction }}</p>
+  {% endif %}
+</body>
+</html>

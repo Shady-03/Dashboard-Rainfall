@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Live Rainfall Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #map { height: 100vh; width: 100%; }
+    .leaflet-popup-content { font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script>
+    // Initialize map
+    var map = L.map('map').setView([22.5, 79], 5);
+
+    // Basemaps
+    var osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    var carto = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+      attribution: '&copy; OpenStreetMap &copy; CARTO', subdomains: "abcd"
+    });
+
+    var dark = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+      attribution: '&copy; OpenStreetMap &copy; CARTO', subdomains: "abcd"
+    });
+
+    var satellite = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
+      attribution: 'Tiles © Esri'
+    });
+
+    L.control.layers({
+      "OpenStreetMap": osm,
+      "Carto Light": carto,
+      "Carto Dark": dark,
+      "Satellite": satellite
+    }).addTo(map);
+
+    // Group for markers (so we can clear & reload)
+    var markersLayer = L.layerGroup().addTo(map);
+
+    // Function to load data from Flask endpoint
+    function loadData() {
+      $.getJSON("/folium-map-json", function(data) {
+        markersLayer.clearLayers(); // remove old markers
+
+        data.forEach(function(city) {
+          if (city.lat && city.lon) {
+            var marker = L.circleMarker([city.lat, city.lon], {
+              radius: 8,
+              color: city.color,
+              fillColor: city.color,
+              fillOpacity: 0.9
+            }).addTo(markersLayer);
+
+            marker.bindPopup(`
+              <b>${city.name}, ${city.state}</b><br>
+              🌡️ Temp: ${city.temp}°C<br>
+              ⛅ Condition: ${city.condition}<br>
+              💧 Rain: ${city.rain} mm<br>
+              ${city.rain_status}
+            `);
+          }
+        });
+      });
+    }
+
+    loadData(); // initial load
+    setInterval(loadData, 300000); // refresh every 5 minutes
+  </script>
+</body>
+</html>

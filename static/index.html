@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌧 Rainfall Alerts PWA</title>
+  <link rel="manifest" href="/static/manifest.json">
+  <meta name="theme-color" content="#1976d2" />
+</head>
+<body>
+  <h1>🌧 Rainfall Alerts PWA</h1>
+  <p>If you allow notifications, you’ll get alerts even when this page is closed.</p>
+  <button id="enable-btn">Enable Alerts</button>
+
+  <script>
+    // Replace with your VAPID public key generated from Python
+    const PUBLIC_VAPID_KEY = "BA758KhgDbqvKw9cQ6wOS3e2WHMvys8KWhaOSqRxKnMdtZpkoCsxEjA-Ywl8GRMyRlkveUk7Q-RzgQEaBkRTI0M";
+
+    // Convert Base64 key to Uint8Array (required by PushManager)
+    function urlBase64ToUint8Array(base64String) {
+      const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
+      const base64 = (base64String + padding)
+        .replace(/-/g, "+")
+        .replace(/_/g, "/");
+
+      const rawData = window.atob(base64);
+      const outputArray = new Uint8Array(rawData.length);
+      for (let i = 0; i < rawData.length; ++i) {
+        outputArray[i] = rawData.charCodeAt(i);
+      }
+      return outputArray;
+    }
+
+    async function subscribeUser() {
+      try {
+        // Register service worker
+        const registration = await navigator.serviceWorker.register("/static/service-worker.js");
+        console.log("Service Worker registered");
+
+        // Request notification permission
+        const permission = await Notification.requestPermission();
+        if (permission !== "granted") {
+          alert("You need to allow notifications!");
+          return;
+        }
+
+        // Subscribe for push
+        const subscription = await registration.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey: urlBase64ToUint8Array(PUBLIC_VAPID_KEY),
+        });
+
+        console.log("Subscribed:", subscription);
+
+        // Send subscription to Flask backend
+        await fetch("/subscribe", {
+          method: "POST",
+          body: JSON.stringify(subscription),
+          headers: { "Content-Type": "application/json" }
+        });
+
+        alert("✅ Subscribed to Rainfall Alerts!");
+      } catch (err) {
+        console.error("Error during subscription:", err);
+        alert("❌ Failed to subscribe. Check console for details.");
+      }
+    }
+
+    document.getElementById("enable-btn").addEventListener("click", subscribeUser);
+  </script>
+</body>
+</html>

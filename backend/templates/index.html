@@ -1,0 +1,54 @@
+<!-- backend/templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rainfall Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background: #f0f8ff;
+        }
+        h2 {
+            color: #0b5394;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background: #0b5394;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .result {
+            font-size: 18px;
+            margin-top: 15px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>IoT-Based Rainfall Prediction</h2>
+    <form method="POST">
+        <label>Enter Subdivision:</label><br><br>
+        <input type="text" name="subdivision" placeholder="e.g. Kerala, Punjab" required>
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction %}
+        <div class="result">{{ prediction }}</div>
+    {% endif %}
+
+    <hr>
+    <a href="/folium-map">🌍 View Rainfall Prediction Map</a>
+</body>
+</html>
