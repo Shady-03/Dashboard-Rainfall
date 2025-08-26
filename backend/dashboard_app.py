@@ -1,5 +1,7 @@
 # backend/dashboard_app.py
 import streamlit as st
+st.title("🌧️ Rainfall Dashboard Test")
+st.write("If you see this, Streamlit is working!")
 
 # ---------------- STREAMLIT CONFIG ---------------- #
 st.set_page_config(
@@ -35,3 +37,4 @@ elif menu == "Realtime Map":
     st.success("⏱️ Realtime Map tab is displaying correctly")
     st.title("⏱️ Placeholder for Realtime Map")
     st.write("This is where the realtime map will appear.")
+
