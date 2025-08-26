@@ -8,3 +8,5 @@ paho-mqtt
 requests
 twilio
 keras
+streamlit
+folium
