@@ -18,7 +18,7 @@ st.write("✅ Streamlit app loaded successfully")
 st.sidebar.title("📌 Dashboard Options")
 menu = st.sidebar.radio(
     "Select View",
-    ["Values & Calculations", "Predicted Map", "Realtime Map"]
+    ["Values & Calculations", "Predicted Map", "Realtime Map", "Graphs"]
 )
 
 # ---------------- 1. VALUES TAB ---------------- #
@@ -32,28 +32,40 @@ if menu == "Values & Calculations":
         with open(METRICS_PATH, "r") as f:
             metrics = json.load(f)
 
-        # --- Show important metrics in cards ---
+        # Helper function: convert 0.x → xx (percentage style)
+        def to_percent(value):
+            try:
+                return str(int(round(value * 100)))
+            except:
+                return str(value)
+
+        # --- Show important regression metrics ---
         col1, col2, col3 = st.columns(3)
-        col1.metric("MSE", f"{metrics.get('MSE', 0):.2f}")
-        col2.metric("MAE", f"{metrics.get('MAE', 0):.2f}")
-        col3.metric("R²", f"{metrics.get('R2', 0):.3f}")
+        col1.metric("MSE", f"{metrics.get('MSE', 0):.0f}")
+        col2.metric("MAE", f"{metrics.get('MAE', 0):.0f}")
+        col3.metric("R²", to_percent(metrics.get('R2', 0)))
 
         st.divider()
 
         # --- Show classification metrics ---
         st.subheader("📑 Classification Metrics")
         col4, col5, col6, col7 = st.columns(4)
-        col4.metric("Accuracy", f"{metrics.get('Accuracy', 0):.3f}")
-        col5.metric("Precision", f"{metrics.get('Precision', 0):.3f}")
-        col6.metric("Recall", f"{metrics.get('Recall', 0):.3f}")
-        col7.metric("F1-score", f"{metrics.get('F1-score', 0):.3f}")
+        col4.metric("Accuracy", to_percent(metrics.get('Accuracy', 0)))
+        col5.metric("Precision", to_percent(metrics.get('Precision', 0)))
+        col6.metric("Recall", to_percent(metrics.get('Recall', 0)))
+        col7.metric("F1-score", to_percent(metrics.get('F1-score', 0)))
 
         st.divider()
 
-        # --- Full JSON table ---
+        # --- Full JSON table (formatted) ---
         st.subheader("📂 Full Metrics Report")
-        all_metrics = {k: [v] for k, v in metrics.items()}
-        st.dataframe(all_metrics, use_container_width=True)
+        display_metrics = {}
+        for k, v in metrics.items():
+            if k in ["MSE", "MAE"]:
+                display_metrics[k] = [f"{v:.0f}"]
+            else:
+                display_metrics[k] = [to_percent(v)]
+        st.dataframe(display_metrics, use_container_width=True)
 
     else:
         st.warning("⚠️ metrics.json not found. Please run training first.")
@@ -85,3 +97,25 @@ elif menu == "Realtime Map":
         html(folium_map, height=600)
     else:
         st.warning("⚠️ Realtime map not found. Run realtime collector first.")
+
+# ---------------- 4. GRAPHS TAB ---------------- #
+elif menu == "Graphs":
+    st.success("Graphs tab is displaying correctly")
+    st.title("📈 Training & Evaluation Graphs")
+
+    PLOTS_DIR = os.path.join("backend", "model", "plots")
+
+    plots = {
+        "Actual vs Predicted": "actual_vs_pred.png",
+        "Loss Curve": "loss_curve.png",
+        "Confusion Matrix": "confusion_matrix.png"
+    }
+
+    for title, filename in plots.items():
+        path = os.path.join(PLOTS_DIR, filename)
+        if os.path.exists(path):
+            st.subheader(title)
+            st.image(path, use_column_width=True)
+            st.divider()
+        else:
+            st.warning(f"⚠️ {filename} not found in {PLOTS_DIR}")
