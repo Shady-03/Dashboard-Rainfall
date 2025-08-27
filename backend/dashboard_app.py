@@ -32,10 +32,29 @@ if menu == "Values & Calculations":
         with open(METRICS_PATH, "r") as f:
             metrics = json.load(f)
 
+        # --- Show important metrics in cards ---
         col1, col2, col3 = st.columns(3)
-        col1.metric("RMSE", f"{metrics.get('rmse', 0):.2f}")
-        col2.metric("MAE", f"{metrics.get('mae', 0):.2f}")
-        col3.metric("R² Score", f"{metrics.get('r2', 0):.2f}")
+        col1.metric("MSE", f"{metrics.get('MSE', 0):.2f}")
+        col2.metric("MAE", f"{metrics.get('MAE', 0):.2f}")
+        col3.metric("R²", f"{metrics.get('R2', 0):.3f}")
+
+        st.divider()
+
+        # --- Show classification metrics ---
+        st.subheader("📑 Classification Metrics")
+        col4, col5, col6, col7 = st.columns(4)
+        col4.metric("Accuracy", f"{metrics.get('Accuracy', 0):.3f}")
+        col5.metric("Precision", f"{metrics.get('Precision', 0):.3f}")
+        col6.metric("Recall", f"{metrics.get('Recall', 0):.3f}")
+        col7.metric("F1-score", f"{metrics.get('F1-score', 0):.3f}")
+
+        st.divider()
+
+        # --- Full JSON table ---
+        st.subheader("📂 Full Metrics Report")
+        all_metrics = {k: [v] for k, v in metrics.items()}
+        st.dataframe(all_metrics, use_container_width=True)
+
     else:
         st.warning("⚠️ metrics.json not found. Please run training first.")
 
