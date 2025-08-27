@@ -11,8 +11,27 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# ---------------- APP START ---------------- #
-st.write("✅ Streamlit app loaded successfully")
+# ---------------- CUSTOM FLOATING SUCCESS MESSAGE ---------------- #
+st.markdown(
+    """
+    <style>
+    .success-message {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #28a745;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-weight: bold;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        z-index: 9999;
+    }
+    </style>
+    <div class="success-message">✅ Streamlit app loaded successfully</div>
+    """,
+    unsafe_allow_html=True
+)
 
 # ---------------- SIDEBAR MENU ---------------- #
 st.sidebar.title("📌 Dashboard Options")
@@ -23,7 +42,6 @@ menu = st.sidebar.radio(
 
 # ---------------- 1. VALUES TAB ---------------- #
 if menu == "Values & Calculations":
-    st.success("Values tab is displaying correctly")
     st.title("📊 Model Metrics & Calculations")
 
     METRICS_PATH = os.path.join("backend", "model", "metrics.json")
@@ -72,7 +90,6 @@ if menu == "Values & Calculations":
 
 # ---------------- 2. PREDICTED MAP TAB ---------------- #
 elif menu == "Predicted Map":
-    st.success("Predicted Map tab is displaying correctly")
     st.title("🗺️ Predicted Rainfall Map")
 
     PREDICTED_MAP_PATH = os.path.join("static", "folium_dataset.html")
@@ -86,7 +103,6 @@ elif menu == "Predicted Map":
 
 # ---------------- 3. REALTIME MAP TAB ---------------- #
 elif menu == "Realtime Map":
-    st.success("Realtime Map tab is displaying correctly")
     st.title("🌍 Realtime Rainfall Map")
 
     REALTIME_MAP_PATH = os.path.join("static", "folium_realtime.html")
@@ -100,7 +116,6 @@ elif menu == "Realtime Map":
 
 # ---------------- 4. GRAPHS TAB ---------------- #
 elif menu == "Graphs":
-    st.success("Graphs tab is displaying correctly")
     st.title("📈 Training & Evaluation Graphs")
 
     PLOTS_DIR = os.path.join("backend", "model", "plots")
@@ -115,7 +130,7 @@ elif menu == "Graphs":
         path = os.path.join(PLOTS_DIR, filename)
         if os.path.exists(path):
             st.subheader(title)
-            st.image(path, use_column_width=True)
+            st.image(path, use_container_width=True)  # ✅ Updated here
             st.divider()
         else:
             st.warning(f"⚠️ {filename} not found in {PLOTS_DIR}")
